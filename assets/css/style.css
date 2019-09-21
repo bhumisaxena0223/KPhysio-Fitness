@@ -6,8 +6,8 @@ header{
 	width: 100%;
 	z-index: 9000;
 	transition: all 0.2s ease-in-out;
-	height:80px;
-	background: #520000;
+	height:155px;
+	background: rgb(204, 66, 66);
 	padding: 0 0;
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: 30px;
@@ -24,16 +24,19 @@ header .navbar-toggler span {
     margin: 5px;
     border: 0px;
     color: #fff;
+    text-align: end;
 }
 header .navbar-expand-lg .navbar-nav .nav-link{
     color: #fff;
     border: 1px solid transparent;
+    width: 200px;
 }
 
 header .navbar-expand-lg .navbar-collapse ul li.nav-item{
 	text-transform: uppercase;
 	cursor: pointer;
-	color: #fff;
+    color: #fff;
+    
 }
 header .navbar-expand-lg .navbar-collapse ul li:hover{
 	color: #fff;
@@ -44,6 +47,16 @@ header .navbar-expand-lg .navbar-collapse ul li a{
 header .navbar-expand-lg .navbar-collapse ul li a:hover{
 	color: #bbb;
 }
+.img-fluid{
+    max-width: 60%;
+    max-height: 180px;
+    border-radius: 5px;
+}
+.photo-tag{
+    text-align: center;
+    color: white;
+}
+
 
 /*-------dropdown menu-----*/
 
@@ -61,8 +74,9 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area{
 header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area h5,
 header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area h5 a{
     font-size: 16px;
-    color: #f48b1d;
+    color: rgb(204, 66, 66);
     width: 100%;
+    /* #1c2e38 */
 }
 header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a{
     padding:0 5px;
@@ -83,7 +97,19 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 
 /*-------dropdown menu end-----*/
 /*--Extra small devices (portrait phones, less than 576px)--*/
-@media (max-width: 575.98px) {
+@media (max-width: 598px) {
+    /* .photo-tag{
+        display: none;
+    } */
+    .mobile-text{
+        font-size: 12px;
+        padding: 0%;
+        margin: 0%;
+    }
+    .img-fluid{
+        max-width: 100%;
+        max-height: 100px;
+    }
     header .navbar-expand-lg .navbar-brand{
         width: 60%;
         height: auto;
@@ -91,10 +117,10 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
     }
     header{
         height:60px;
-        background: #000;
+        background: rgb(204, 66, 66);
     }
     header .navbar-expand-lg .navbar-nav .nav-link{
-        background-color: black;
+        background-color: ffffff;
         float: right;
         text-align:left;
         padding: 0.5rem 1rem;
@@ -103,7 +129,8 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         width: 100%;
         height: auto;
         right: 0;
-        border-bottom: 1px solid white;
+        color: rgb(29, 27, 27);
+        border-bottom: 1px solid rgb(204, 66, 66);
     }
     header .navbar-expand-lg .navbar-collapse ul li:hover .nav-link{
         color: #000;
@@ -123,6 +150,10 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 
 /*---- Small devices (landscape phones, 576px and up)---*/
 @media (min-width: 576px) and (max-width: 767.98px){
+    .img-fluid{
+        max-width: 100%;
+        max-height: 80px;
+    }
     header .navbar-brand{
         width: 44%;
         height: auto;
@@ -136,12 +167,12 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         z-index: 10000;
         transition: all 0.2s ease-in-out;
         height:80px;
-        background: #000;
+        background: #520000;
         padding: 0 0;
         font-family: 'Ubuntu', sans-serif;
     }
     header .navbar-expand-lg .navbar-nav .nav-link{
-        background-color: black;
+        background-color: #520000;
         float: right;
         text-align: left;
         padding: 0.5rem 1rem;
@@ -161,6 +192,10 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 
 /*-- Medium devices (tablets, 768px and up)--*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .img-fluid{
+        max-width: 100%;
+        max-height: 85px;
+    }
      header .navbar-expand-lg .navbar-brand{
         width: 60%;
         height: auto;
@@ -174,7 +209,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         z-index: 10000;
         transition: all 0.2s ease-in-out;
         height:95px;
-        background: #000;
+        background: #520000;
         padding: 0 0;
         font-family: 'Ubuntu', sans-serif;
     }
@@ -199,6 +234,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
     header .navbar-toggler span {
         display: block;
         background-color: #fff;
+        text-align: end;
         width: 30px;
         height: 3px;
         margin: 6px;
@@ -226,7 +262,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
     color: #fff;
 }
 
-/*--Extra small devices (portrait phones, less than 576px)-----*/
+/* --Extra small devices (portrait phones, less than 576px)-----
 @media (max-width: 575.98px) {
     .slide .carousel-inner .carousel-item .carousel-caption{
         padding: 0 0 1rem 0;
@@ -277,7 +313,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
     margin-top: -5%;
     font-family: 'Ubuntu', sans-serif;
 }
-.section-bg .section-bg-background{}
+/* .section-bg .section-bg-background{} */
     
 .section-bg .col{
     padding-left: 1px;
@@ -373,6 +409,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 }
 /*-- Extra small devices (portrait phones, less than 576px)--*/
 @media (max-width: 575.98px){
+    
     .service .item .media .icon-aling{
         height: 45px;
         width: 45px;
@@ -1771,48 +1808,8 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 
 /*--Medium devices (tablets, 768px and up)--*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    .contact-us .title-mid-head{
-        padding: 6% 0 5.5% 0;
-    }
-    .contact-us .title-mid-head h2{
-        font-weight: 600;
-        font-size: 25px;
-        margin: 0;
-    }
-    .contact-us .title-mid-head h2 span{
-        color: #f48b1d;
-    }
-    .contact-us .title-mid-head img{
-        width: 27%;
-    }
-    .contact-us .title-mid-head p{
-        color: white;
-        font-size: 14px;
-    }
-    .contact-us .contact-aling .media{
-        color: white;
-        font-size: 14px;
-        padding-bottom: 2%;
-    }
-    .contact-us .contact-aling .media i{
-        font-size: 18px;
-        color: #f48b1d;
-    }
-    .contact-us .contact-aling .media media-body h5{
-        font-size: 16px;
-    }
-    .contact-us .contact-aling .media media-body p{
-        font-size: 14px;
-    }
+ 
 }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-/*-------------Footer Bottom---------------*/
 
 .footer-bottom {
     padding: 20px 0 10px;
@@ -1841,1180 +1838,12 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 .social-link li a:hover{
     color: #ccc;
 }
-/*--xtra small devices (portrait phones, less than 576px)--*/
-@media (max-width: 575.98px) {
 
-    .footer-bottom {
-        padding: 20px 0 10px;
-        border-top: 1px solid #666;
-        background: #1e1e1e;
-        margin-top: 1%;
-    }
-    .copyright-text p {
-        color: #fff;
-        margin-top: 0px;
-        margin-bottom: 0;
-        font-size: 14px;
-    }
-    .social-link li {
-        display: inline-block;
-        margin: 0 9px;
-        color: #fff;
-        float: right;
-    }
-    .social-link li a {
-        color: #fff;
-        text-align: center;
-        display: inline-block;
-        font-size: 15px;
-        transition: .5s;
-    }
-    .social-link li a:hover{
-        color: #ccc;
-    }
-}
-/*----Small devices (landscape phones, 576px and up)----*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .footer-bottom {
-        padding: 20px 0 10px;
-        border-top: 1px solid #666;
-        background: #1e1e1e;
-        margin-top: 1%;
-    }
-    .copyright-text p {
-        color: #fff;
-        margin-top: 0px;
-        margin-bottom: 0;
-        font-size: 14px;
-    }
-    .social-link li {
-        display: inline-block;
-        margin: 0 9px;
-        color: #fff;
-        float: right;
-    }
-    .social-link li a {
-        color: #fff;
-        text-align: center;
-        display: inline-block;
-        font-size: 15px;
-        transition: .5s;
-    }
-    .social-link li a:hover{
-        color: #ccc;
-    }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-/*-------------Footer Bottom end---------------*/
-
-
-/*------------web development-----------*/
-
-.webservices{
-    background-color: #f0eded;
-}
-.webservices .text-aling h1{
-    color: #e37824;
-}
-.webservices .text-aling h1:after{ 
-    content:"";
-    display:block; 
-    width:15%; 
-    height:1px; 
-    background:#e37824; 
-    margin-top: 1rem;
-}
-.webservices .services-img{
-   margin-right: -15px;
-}
-.webservices .text-aling{
-    padding: 11rem 0 0 11rem;
-}
-/*----Extra small devices (portrait phones, less than 576px)--*/
-@media (max-width: 575.98px) { 
-
-    .webservices{ }
-    .webservices .text-aling{
-        padding: 6rem 1rem 0 1rem;
-        text-align: center;
-        font-size: 12px
-    }
-    .webservices .text-aling h1{
-        font-size: 17px;
-    }
-    .webservices .text-aling h1:after{ 
-        margin: auto;
-        margin-top: 0.5rem;
-    }
-    .webservices .services-img{
-        margin-top: -2rem;
-    }
-}
-
-/*---Medium devices (tablets, 576px and up)--*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .webservices .text-aling{
-        padding: 7rem 0 0 0;
-        font-size: 13px
-    }
-    .webservices .text-aling h1{
-        font-size: 19px;
-    }
-    .webservices .services-img{
-        margin-top: 4rem;
-    }
-}
-
-/*------------section = 2-----------*/
-
-.web_development{}
-.web_development .text-aling{
-    padding: 4rem 0;
-}
-.web_development .text-aling h2{
-    color: #e37824;
-}
-.web_development .text-aling h2:after{ 
-    content:"";
-    display:block; 
-    width:10%; 
-    height:1px; 
-    background:#e37824; 
-    margin-top: 1rem;
-}
-.web_development .text-aling p{}
 /*--Extra small devices (portrait phones, less than 576px)--*/
 @media (max-width: 575.98px) {
-    .web_development .text-aling{
-        padding: 1.5rem 0;
-    }
-    .web_development .text-aling h2{
-        font-size: 17px;
-        text-align: center;
-    }
-    .web_development .text-aling h2:after{ 
-        content:"";
-        display:block; 
-        width:10%; 
-        height:1px; 
-        background:#e37824; 
-        margin: auto;
-        margin-top: 0.5rem;
-    }
-    .web_development .text-aling p{
-        font-size: 13px;
-        text-align: center;
-    }
 }
 
-/*--Small devices (landscape phones, 576px and up)--*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .web_development .text-aling{
-        padding: 1.5rem 0;
-    }
-    .web_development .text-aling h2{
-        font-size: 18px;
-    }
-    .web_development .text-aling p{
-        font-size: 13px;
-    }
-}
-/*------------section = 3-----------*/
-.web_Potential{}
-.web_Potential .text-aling{}
-.web_Potential .text-aling h2{color: #e37824;}
-.web_Potential .text-aling h2:after{ 
-    content:"";
-    display:block; 
-    width:20%; 
-    height:1px; 
-    background:#e37824; 
-    margin-top: 1rem;
-}
-.web_Potential .text-aling p{}
-.web_Potential .services-img{
- padding: 1rem 0 0 0;
-   }
-/*--Extra small devices (portrait phones, less than 576px)--*/
-@media (max-width: 575.98px) {
-
-    .web_Potential .text-aling h2{
-        font-size: 17px;
-        text-align: center;
-    }
-    .web_Potential .text-aling h2:after{ 
-        margin: auto;
-        margin-top: 0.5rem;
-    }
-    .web_Potential .text-aling p{
-        font-size: 13px;
-        text-align: center;
-    }
-    .web_Potential .text-aling ul{
-        font-size: 14px;
-    }
-}
-/*--Small devices (landscape phones, 576px and up)--*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-   .web_Potential .text-aling h2{
-        font-size: 17px;
-    }
-    .web_Potential .text-aling h2:after{ 
-        margin-top: 0.5rem;
-       
-    }
-    .web_Potential .text-aling p{
-        font-size: 13px;
-
-    }
-    .web_Potential .text-aling ul{
-        font-size: 14px;
-    } 
-}
-/*------------section web development services-----------*/
-.web_services{}
-.web_services .text-aling{
-    padding: 4rem 0;
-    color: #e37824;}
-.web_services .text-aling:after{ 
-    content:"";
-    display:block; 
-    width:20%; 
-    height:1px; 
-    background:#e37824; 
-    margin:auto;
-    margin-top: 1.5rem;
-}
-.web_services .card{
-    border: 0;
-}
-.web_services .text-aling p{
-    color: #000;
-}
-.web_services .card .card-img-top{
-    width: 100px;
-    align-self: center;
-}
-
-/*------------web development end-----------*/
-.web_services .box {
-	height: 400px;
-	cursor: pointer;
-	transform-style: preserve-3d;
-	perspective: 2000px;
-	transition: 0.5s;
-}
-.web_services .box:hover {
-	transform: translate(-3%,-3%) rotateY(-30deg) skewY(5deg);
-}
-.web_services .box:before {
-	content:'';
-	position: absolute;
-	
-	width: 90%;
-	height: 93%;
-	background: transparent;
-	border-top: 10px solid #727272;
-	border-left: 10px solid #727272;
-	box-sizing: border-box;
-}
-.web_services .box:after {
-	content: '';
-	position: absolute;
-	
-	width: 90%;
-	height: 93%;
-	background: transparent;
-	border-bottom: 10px solid #727272;
-	border-right: 10px solid #727272;
-	box-sizing: border-box;
-}
-.web_services .box .text {
-	position: absolute;
-	top: 25px;
-	left: -15px;
-	background: #f0eded;
-	width: calc(85% + 50px);
-	height: calc(95% - 55px);
-	transition: 0.5s;
-}
-.web_services .box:hover .text {
-	transform:rotateY(30deg) skewY(-5deg);
-}
-.web_services .text div {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	transform:translateY(-50%);
-	padding: 20px 40px;
-	box-sizing: border-box;
-	text-align: center;
-}
-.web_services .text div h4 {
-	margin: 0 0 20px;
-	padding: 0 40px;
-	color: #000;		
-}
-.web_services .text div p {
-	margin: 0 0 20px;
-	padding: 0;
-	color: #4a4a4a;
-	font-size: 14px;
-}
-.web_services .text div a{
-    color: #e37824;
-    text-decoration: none;
-}
-.web_services .fa {
-	width: 80px;
-	height: 80px;
-	background: #e37824;
-	color: #262626;
-	text-align: center;
-	line-height: 80px !important;
-	font-size: 40px !important;
-    padding: 0.5rem;
-}
-.web_services .fa.fa1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-/*--Extra small devices (portrait phones, less than 576px)--*/
-@media (max-width: 575.98px) {
-    .web_services .text-aling{
-        padding: 1.5rem 0 1rem 0;
-    }
-    .web_services .text-aling h2{
-        font-size: 17px;
-    }
-    .web_services .text-aling:after{ 
-        margin-top: 0.5rem;
-    }
-    .web_services .box {
-        height: 330px;
-        }
-    .web_services .box:before {
-        width: 93%;
-        height: 96%;
-        border-bottom: 8px solid #727272;
-        border-right: 8px solid #727272;
-    }
-    .web_services .box:after {
-        width: 93%;
-        height: 96%;
-        border-bottom: 8px solid #727272;
-        border-right: 8px solid #727272;
-        }
-    .web_services .box .text {
-        top: 25px;
-        left: -10px;
-        width: calc(90% + 55px);
-        height: calc(98% - 55px);
-        }
-    .web_services .box:hover {
-        transform: translate(-2%,-2%) rotateY(-20deg) skewY(3deg);
-        }
-    .web_services .box:hover .text {
-        transform:rotateY(20deg) skewY(-3deg);
-        }
-     .web_services .text div h4 {
-         font-size: 15px;
-    }
-    .web_services .text div p {
-        font-size: 12px;
-    }
-
-}
-/*--Small devices (landscape phones, 576px and up)--*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .web_services .text-aling{
-        padding: 1.5rem 0 1rem 0;
-    }
-    .web_services .text-aling h2{
-        font-size: 17px;
-    }
-   .web_services .text div h4 {
-        font-size: 15px;
-    }
-    .web_services .text div p {
-	   font-size: 12px;
-    } 
-}
-/*--------------this ti TECHNOLOGIES part start now----------------------*/
-.technologies{
-    padding: 2rem 0
-}
-.technologies .text-aling h2{
-    
-    line-height: 50px;
-    padding-bottom: 3rem;
-    color: #e37824;
-}
-.technologies .text-aling h2:after{ 
-    content:"";
-    display:block; 
-    width:15%; 
-    height:1px; 
-    background:#e37824; 
-    margin:auto;
-    margin-top: 1.5rem;
-}
-
-
-.technologies a{
-    text-decoration: none;
-}
-.technologies .logo-box{
-    border: 1px solid #8c95a1;
-    text-align: center;
-    padding: 30px 20px 20px 20px;
-    margin-bottom: 30px;
-} 
-.technologies .logo-box h2 {
-    color: #8c95a1;
-    font-size: 24px;
-    padding: 1rem 0 0.5rem 0;
-}
-.technologies a:hover .logo-box {
-     box-shadow:0 2px 16px rgba(0,0,0,.1);
-   
-    
-}
-/*--Extra small devices (portrait phones, less than 576px)--*/
-@media (max-width: 575.98px) {
-    .technologies{
-        padding: 1rem 0
-    }
-    .technologies .text-aling h2{
-        font-size: 17px;
-        padding-bottom: 1rem;
-    }
-    .technologies .text-aling h2:after{ 
-        margin-top: 0.3rem;
-    }
-    .technologies .logo-box h2 {
-        font-size: 17px;
-    }
-}
-/*--Small devices (landscape phones, 576px and up)--*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .technologies{
-        padding: 1rem 0
-    }
-    .technologies .text-aling h2{
-        font-size: 17px;
-        padding-bottom: 1rem;
-    }
-    .technologies .text-aling h2:after{ 
-        margin-top: 0.3rem;
-    }
-    .technologies .logo-box h2 {
-        font-size: 17px;
-    }    
-}
-/*---------------this ti web development part start now----------------------*/
-
-.web-img{
-    background-image: url(../images/backgrounimages.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.htmlbg{
-    background-image: url(../images/html%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.psdbg{
-    background-image: url(../images/psd%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.angularjsbg{
-    background-image: url(../images/angularjs%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.drupal{
-    background-image: url(../images/drupal%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.wordPress{
-    background-image: url(../images/wordPress%20Background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.pretashop{
-    background-image: url(../images/prestashop%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.magento.web-img{
-    background-image: url(../images/magento%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.woocommerce{
-    background-image: url(../images/woocommerce%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.phoneGap{
-    background-image: url(../images/phoneGap%20background.png);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.react{
-    background-image: url(../images/React%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.ecommerce{
-    background-image: url(../images/ECommerce%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.ionic{
-    background-image: url(../images/ionic%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.hybrid{
-    background-image: url(../images/hybrid%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.ios-background{
-    background-image: url(../images/ios%20banner.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.meanstack{
-    background-image: url(../images/mean%20stack%20banner.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.nodejs{
-    background-image: url(../images/nodejs%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-
-.zend{
-    background-image: url(../images/zend%20background.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.ror{
-    background-image: url(../images/Ruby%20on%20Rails%20Development.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.php-background{
-    background-image: url(../images/phpbackground.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.background-img{
-    background-image: url(../images/phpbackground.jpg);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 3rem 0;
-}
-.web-img .text-aling{}
-.web-img .text-aling h2{
-   
-    line-height: 50px;
-    color: #fff;
-}
-.web-img .text-aling h2:after{ 
-    content:"";
-    display:block; 
-    width:15%; 
-    height:1px; 
-    background:#fff; 
-    margin:auto;
-    margin-top: 1rem;
-}
-.web-img .text-aling p{
-    line-height: 25px;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 400;
-    padding-bottom: 3rem;
-}
-.web-img .text-list{
-    color: #fff;
-}
-.web-img .text-list ul{
-    list-style: none;
-}
-.text-left{
-    padding-left:10rem;
-}
-.web-img .text-list ul li{}
-/*--Extra small devices (portrait phones, less than 576px)--*/
-@media (max-width: 575.98px) {
-    .web-img{
-        padding: 1rem 0
-    }
-    .web-img .text-aling h2{
-        font-size: 17px;
-    }
-    .web-img .text-aling h2:after{ 
-        margin-top: 0.1rem;
-    }
-    .web-img .text-aling p{
-        font-size: 13px;
-        padding-bottom: 0.2rem;
-        line-height: 15px;
-    }
-    .web-img .text-list ul li{
-        font-size: 12px;
-        text-align: center;
-    }
-    .web-img .text-list ul{
-        padding: 0;
-    }
-}
-/*--Small devices (landscape phones, 576px and up)--*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .web-img{
-        padding: 1rem 0
-    }
-    .web-img .text-aling h2{
-        font-size: 17px;
-    }
-    .web-img .text-aling h2:after{ 
-        margin-top: 0.1rem;
-    }
-    .web-img .text-aling p{
-        font-size: 13px;
-        padding-bottom: 0.2rem;
-        line-height: 15px;
-    }
-    .web-img .text-list ul li{
-        font-size: 12px;
-        text-align: left;
-        }
-        .web-img .text-list ul{
-            padding: 0;
-        }
-}
-/*---------------this ti expert t part start now----------------------*/
-.expert-align{
-    padding: 3rem 0
-}
-.expert-align .text-aling{}
-.expert-align .text-aling h2{
-    
-    line-height: 50px;
-    color: #e37824;
-}
-.expert-align .text-aling h2:after{ 
-    content:"";
-    display:block; 
-    width:15%; 
-    height:1px; 
-    background:#e37824; 
-    margin:auto;
-    margin-top: 1rem;
-}
-.expert-align .text-aling p{
-    line-height: 25px;
-    font-size: 16px;
-    color: #000;
-    font-weight: 400;
-    padding-bottom: 3rem;
-}
-.expert-align .card{
-    border: 0;
-}
-.expert-align .card i{
-    font-size: 25px;
-    color: orange;
-}
-.expert-align .card .card-title h5{}
-.expert-align .card .card-title p{}
-/*--Extra small devices (portrait phones, less than 576px)--*/
-@media (max-width: 575.98px) {
-    .expert-align{
-        padding: 1rem 0;
-    }
-    .expert-align .text-aling h2{
-        font-size: 17px;  
-    }
-    .expert-align .text-aling h2:after{ 
-        margin-top: 0;
-    }
-    .expert-align .text-aling p{
-        font-size: 12px;
-        padding-bottom: 1rem;
-        line-height: 15px;
-    }
-    .expert-align .card i{
-        font-size: 30px;
-    }
-    .expert-align .card .card-title{
-        font-size: 17px;
-    }
-    .expert-align .card .card-text{
-        font-size: 12px;
-    }
-}
-/*--Small devices (landscape phones, 576px and up)--*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-   .expert-align{
-        padding: 1rem 0;
-    }
-    .expert-align .text-aling h2{
-        font-size: 17px;  
-    }
-    .expert-align .text-aling h2:after{ 
-        margin-top: 0;
-    }
-    .expert-align .text-aling p{
-        font-size: 12px;
-        padding-bottom: 1rem;
-        line-height: 15px;
-    }
-    .expert-align .card i{
-        font-size: 30px;
-    }
-    .expert-align .card .card-title{
-        font-size: 17px;
-    }
-    .expert-align .card .card-text{
-        font-size: 12px;
-    }  
-}
-
-/*-------------Ruby on rails-----------*/
-
-.ruby_services{
-    padding: 3rem 0
-}
-.ruby_services .text-aling{}
-.ruby_services .text-aling h2{
-    
-    line-height: 50px;
-    color: #e37824;
-}
-.ruby_services .text-aling h2:after{ 
-    content:"";
-    display:block; 
-    width:15%; 
-    height:1px; 
-    background:#e37824; 
-    margin:auto;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
-}
-
-.ruby_services .card-container {
-	  -webkit-perspective: 800px;
-   -moz-perspective: 800px;
-     -o-perspective: 800px;
-        perspective: 800px;
-        margin-bottom: 30px;
-}
-/* flip the pane when hovered */
-.ruby_services .card-container:not(.manual-flip):hover .card,
-.ruby_services .card-container.hover.manual-flip .card{
-	-webkit-transform: rotateY( 180deg );
--moz-transform: rotateY( 180deg );
- -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-}
-
-
-.ruby_services .card-container.static:hover .card,
-.ruby_services .card-container.static.hover .card {
-	-webkit-transform: none;
--moz-transform: none;
- -o-transform: none;
-    transform: none;
-}
-/* flip speed goes here */
-.ruby_services .card {
-	 -webkit-transition: -webkit-transform .5s;
-   -moz-transition: -moz-transform .5s;
-     -o-transition: -o-transform .5s;
-        transition: transform .5s;
--webkit-transform-style: preserve-3d;
-   -moz-transform-style: preserve-3d;
-     -o-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.ruby_services .front, .back {
-	-webkit-backface-visibility: hidden;
-   -moz-backface-visibility: hidden;
-     -o-backface-visibility: hidden;
-        backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #FFF;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
-}
-
-/* front pane, placed above back */
-.ruby_services .front {
-	z-index: 2;
-}
-
-/* back, initially hidden pane */
-.ruby_services .back {
-		-webkit-transform: rotateY( 180deg );
-   -moz-transform: rotateY( 180deg );
-     -o-transform: rotateY( 180deg );
-        transform: rotateY( 180deg );
-        z-index: 3;
-}
-
-
-
-.ruby_services .card{
-    background: none repeat scroll 0 0 #FFFFFF;
-    border-radius: 4px;
-    color: #444444;
-}
-.ruby_services .card-container, .front, .back {
-	width: 100%;
-	height: 200px;
-	border-radius: 4px;
-	-webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
--moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
-}
-
-.ruby_services .card .content{
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-    padding: 10px 20px 20px;
-}
-.ruby_services .card .content .main {
-    min-height: 160px;
-}
-.ruby_services .card .back .content .main {
-    height: 103px;
-}
-.ruby_services .card .front img{
-    padding: 8% 29% 0 29%;
-    align-self: center;
-  
-}
-.ruby_services .card .front .card-body h3{
-    font-size: 15px;
-}
-.ruby_services .card .back p{
-    font-size: 14px;
-    padding-top: 10%;
- 
-}
-.ruby_services .card .back p a{
-    text-decoration: none;
-    color: #e37824;
-    
-}
-
- /*---------------this is Ruby on Rails part start now----------------------*/
-.why-ruby{
-    padding: 0;
-}
-.why-ruby .text-aling{}
-.why-ruby .text-aling h2{
-    padding-top: 1.5rem;
-    line-height: 50px;
-    color: #e37824;
-}
-.why-ruby .text-aling h2:after{ 
-    content:"";
-    display:block; 
-    width:15%; 
-    height:1px; 
-    background:#e37824; 
-    margin:auto;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
-}
-.why-ruby .services-img{}
-.why-ruby .custom-development{
-   padding-top: 18%;
-}
-.why-ruby .custom-development h2{
-    color: #e37824;
-    font-size: 28px;
-}
-.why-ruby .custom-development p{}
-.why-ruby .custom-development .button-align{
-    text-decoration: none;
-    color: #e37824;
-    transition: all 0.5s;
-    cursor: pointer;
-
-}
-.why-ruby .custom-development .button-align span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-.why-ruby .custom-development .button-align span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-
-}
-.why-ruby .custom-development .button-align:hover span {
-  padding-right: 25px;
-
-}
-
-.why-ruby .custom-development .button-align:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-/*------mobile app development----------------*/
-
-.web_services .mobile-align i{
-    align-self: center;
-}
-.ruby_services .card .front img.iphone{
-    padding: 1% 28% 0 28%;
-    align-self: center;
-  
-}
-.ruby_services .card{
-    position: relative;
-    border: 0;    
-}
-.ruby_services .card .face{
-    transition: 0.5s;
-}
-.ruby_services .card .face.face1{
-    position: relative;
-    background: #f6f5f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(70px);
-}
-.ruby_services .card:hover .face.face1{
-    background: #e37824;
-    transform: translateY(0);
-}
-.ruby_services .card .face.face1 .content{
-    opacity: 0.5;
-    transition: 0.5s;
-}
-.ruby_services .card:hover .face.face1 .content{
-    opacity: 1;
-}
-.ruby_services .card .face.face1 .content img{
-    
-}
-.ruby_services .card .face.face1 .content h3{
-    margin: 10px 0 0;
-    color:  #000;
-    display: flex;
-    text-align: center;
-    font-size: 23px;
-}
-.ruby_services .card .face.face2{
-    position: relative;
-    background: #f6f5f4;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 5px;
-    box-sizing: border-box;
-    
-    transform: translateY(-100px);
-}
-.ruby_services .card:hover .face.face2{
-    transform: translateY(0);
-}
-.ruby_services .card .face.face2 .content p{
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-}
-.ruby_services .card .face.face2 .content a{
-    margin: 15px 0 0;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 400;
-    color:#333;
-    padding: 3px;
-    border: 1px solid #333;
-}
-/*---------profile card--------------*/
-
-
-
-.technologies .single-item .icon-box{
-   padding: 1rem 0; 
-}
-.technologies .single-item{
-    position:relative;
-    padding:0 15px 10px;
-    transition:all .5s ease;
-}
-.technologies .single-item:hover {
-        box-shadow: 0 20px 30px -10px rgba(0,0,0,.5);
-}
-
-
-.technologies .single-item h4{
-    font-size:17px;
-    line-height:30px;
-    font-weight:500;
-}
-.technologies .single-item .text p{
-    font-size: 13px;
-}
-
-/*---------profile card end--------------*/
-/*---Extra small devices (portrait phones, less than 576px)---*/
-@media (max-width: 575.98px) {
-    .ruby_services .text-aling h2{
-        font-size: 17px;
-    }
-    .ruby_services {
-        padding: 1rem 0;
-    }
-    .ruby_services .card .front img {
-        padding: 3% 29% 0 29%;
-    }
-    .ruby_services .card .front .card-body{
-        padding: 0.5rem;
-    }
-    .why-ruby .text-aling h2 {
-        color: #e37824;
-        font-size: 17px;
-        line-height: 1.5;
-    }
-    .why-ruby .custom-development h2 {
-        font-size: 17px;
-        text-align: center;
-    }
-    .why-ruby .custom-development p {
-        font-size: 13px;
-        text-align: center;
-    }
-    .why-ruby .custom-development {
-        padding-top: 3%;
-    }
-}
 /*---Small devices (landscape phones, 576px and up)---*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .ruby_services .text-aling h2 {
-        color: #e37824;
-        font-size: 20px;
-    }
-    .ruby_services .card .front .card-body h3 {
-        font-size: 16px;
-    }
-    .why-ruby .text-aling h2 {
-        color: #e37824;
-        font-size: 20px;
-    }
-    .why-ruby .custom-development h2 {
-        color: #e37824;
-        font-size: 18px;
-    }
-    .why-ruby .custom-development {
-        padding-top:0;
-    } 
-    .why-ruby .custom-development p {
-        font-size: 13px;
-    }
-
+    
 }
-
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-
-
-
-
-
-
-
-
-
-
-
