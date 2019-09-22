@@ -1,4 +1,35 @@
+/*vertical slider */
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
 
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+
+.about_us_h4{
+    margin-top: 20px;
+    background-color: rgb(236, 247, 95);
+    padding: 10px;
+}
+.img-fluid-2{
+    width: 200px;
+    height: 100px;;
+}
+.mobile-text{
+    margin: 0%;
+    text-align: left;
+}
 header{
     position:fixed;
 	top: 0;
@@ -6,7 +37,7 @@ header{
 	width: 100%;
 	z-index: 9000;
 	transition: all 0.2s ease-in-out;
-	height:155px;
+	height:145px;
 	background: rgb(204, 66, 66);
 	padding: 0 0;
     font-family: 'Ubuntu', sans-serif;
@@ -48,7 +79,7 @@ header .navbar-expand-lg .navbar-collapse ul li a:hover{
 	color: #bbb;
 }
 .img-fluid{
-    max-width: 60%;
+    max-width: 68%;
     max-height: 180px;
     border-radius: 5px;
 }
@@ -66,10 +97,11 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area{
 }
 header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area{
     position: absolute;
-    width: 100%;
-    left: 0;
+    width: 15%;
+    left: 40%;
     right: 0;
     padding: 15px;
+    
 }
 header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area h5,
 header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area h5 a{
@@ -92,23 +124,26 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
     line-height: 33px;
 }
 .slider-kp{
-  margin-top: 80px;
+  margin-top: 150px;
 }
 
 /*-------dropdown menu end-----*/
 /*--Extra small devices (portrait phones, less than 576px)--*/
 @media (max-width: 598px) {
-    /* .photo-tag{
+    .photo-tag{
         display: none;
-    } */
+        width: 20%;
+    }
+    
     .mobile-text{
-        font-size: 12px;
+        font-size: 14px;
         padding: 0%;
         margin: 0%;
     }
     .img-fluid{
-        max-width: 100%;
-        max-height: 100px;
+        width: 200px !important;
+        height: 95px;
+        margin: 0%;
     }
     header .navbar-expand-lg .navbar-brand{
         width: 60%;
@@ -116,7 +151,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         color: white;
     }
     header{
-        height:60px;
+        height:115px;
         background: rgb(204, 66, 66);
     }
     header .navbar-expand-lg .navbar-nav .nav-link{
@@ -167,12 +202,12 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         z-index: 10000;
         transition: all 0.2s ease-in-out;
         height:80px;
-        background: #520000;
+        background: rgb(204, 66, 66);;
         padding: 0 0;
         font-family: 'Ubuntu', sans-serif;
     }
     header .navbar-expand-lg .navbar-nav .nav-link{
-        background-color: #520000;
+        background-color: rgb(204, 66, 66);;
         float: right;
         text-align: left;
         padding: 0.5rem 1rem;
@@ -209,7 +244,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         z-index: 10000;
         transition: all 0.2s ease-in-out;
         height:95px;
-        background: #520000;
+        background: rgb(204, 66, 66);;
         padding: 0 0;
         font-family: 'Ubuntu', sans-serif;
     }
@@ -428,6 +463,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 
 /*--Small devices (landscape phones, 576px and up)--*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
+   
   .service .item .media .icon-aling{
         height: 45px;
         width: 45px;
@@ -539,6 +575,9 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 
 /*-- Extra small devices (portrait phones, less than 576px)--*/
 @media (max-width: 575.98px) { 
+    .kp-intro{
+        width: 150px;
+    }
      .why-us .title-mid-head h2{
         font-size: 30px;
     }
@@ -709,7 +748,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
     font-family: 'Ubuntu', sans-serif;
 }
 .about-us .about-us-bg{
-    background:url(../images/dotimages.jpg); 
+    background:url(../img/dotimages.jpg); 
     background-repeat:no-repeat; 
     background-size:cover;
     border-top: 1.5px solid #d8d8d6;
@@ -766,7 +805,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         width: 45%;
     }
     .about-us .about-us-bg .title-mid-head p{
-        font-size: 14px;
+        font-size: 18px;
     }
     .about-us .mid-head h3{
         font-size: 23px;
@@ -797,7 +836,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
     }
 
     .about-us .about-us-bg .title-mid-head p{
-        font-size: 14px;
+        font-size: 18px;
     }
     .about-us .mid-head h3{
         color: #f48b1d;
