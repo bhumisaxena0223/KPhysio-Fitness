@@ -1,9 +1,23 @@
 .card-body{
-    background-color: #f19c7d;
-    
+    background-color: #f19c7d;   
+}
+.margin{
+    margin: 10px;
+}
+.about_us_h2 {
+    font-weight: 900;
+    color: rgb(239, 53, 110);
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .card-title {
     font-size: 20px;
+}
+.testimonial_content{
+    height: 400px;
 }
 .photo-tag2{
     display: none;
@@ -171,13 +185,26 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 /*-------dropdown menu end-----*/
 /*--Extra small devices (portrait phones, less than 576px)--*/
 @media (max-width: 598px) {
+    video {
+        width: 300px;
+    }
+    .small-scn{
+        margin-top: 10px;
+    }
+    ul.social-link-head{
+        padding-inline-start: 10px
+    }
+    .img-vishal {
+        height: 80px;
+        width: auto;
+    }
     .responsive {
         max-width: 100%;
         height: 300px;
       }
     .back-head
 {
-    margin-left: 0% !important;
+    /* margin-left: 0% !important; */
     background: #0ec5ac;
 }
     .mob-text{
@@ -186,28 +213,28 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         border-bottom: 2px white solid;
     }
     .slider-kp {
-        margin-top: 330px;
+        margin-top: 180px;
     }
-    .container {
+    /* .container {
         padding: 0%; 
-    }
-    .row{
+    } */
+    /* .row{
         margin-left: 0% !important;
         margin-right: 0% !important; 
-    }
+    } */
     .photo-tag{
         display: none;
         width: 20%;
     }
     
     .mobile-text{
-        font-size: 16px;
+        font-size: 12px;
         padding: 0%;
         margin: 0%;
     }
     .img-fluid{
-        width: 100% !important;
-        height: 95px;
+        width: 60% !important;
+        height: 80px;
         margin: 0%;
     }
     header .navbar-expand-lg .navbar-brand{
@@ -216,8 +243,10 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         color: white;
     }
     header{
-        height:115px;
-        background: rgb(204, 66, 66);
+        
+        height:80px;
+        position: relative;;
+        /* background: rgb(204, 66, 66); */
     }
     header .navbar-expand-lg .navbar-nav .nav-link{
         background-color: ffffff;
@@ -278,12 +307,12 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         z-index: 10000;
         transition: all 0.2s ease-in-out;
         height:auto;
-        background: rgb(204, 66, 66);;
+        background: #0ec5ac none repeat scroll 0 0;
         padding: 0 0;
         font-family: 'Ubuntu', sans-serif;
     }
     header .navbar-expand-lg .navbar-nav .nav-link{
-        background-color: rgb(204, 66, 66);;
+        background: #0ec5ac none repeat scroll 0 0;
         float: right;
         text-align: left;
         padding: 0.5rem 1rem;
@@ -323,7 +352,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         z-index: 10000;
         transition: all 0.2s ease-in-out;
         height:auto;
-        background: rgb(204, 66, 66);;
+        background: #0ec5ac none repeat scroll 0 0;
         padding: 0 0;
         font-family: 'Ubuntu', sans-serif;
     }
@@ -403,9 +432,12 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         font-size: 17px;
     }
 }
-
 /*-- Medium devices (tablets, 768px and up)--*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    video {
+        width: auto;
+        height: auto;
+    }
     .mob-nuber{
         font-size: 8px;
     }
@@ -503,8 +535,6 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 .service .item .media .media-body h4{
     color: #fff;
 }
-.service .item .media .media-body p{}
-
 .service .item .media .media-body i{
     font-size: 1.5rem;
     padding-bottom: 3%;
@@ -1556,11 +1586,12 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 /*---------------------Contact Us--------------------------*/
 
 .contact-us{
-    background:url(../img/contact-background.jpg);
+    background:url(../img/IMG-20191011-WA0000.jpg);
     margin-top: 1%;
     font-family: 'Ubuntu', sans-serif;
     background-repeat:no-repeat; 
     background-size:cover;
+    max-width: 100%;
 }
 .contact-us .title-mid-head{
     padding: 5.5% 0 5.5% 0;
@@ -1576,7 +1607,6 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 .contact-us .title-mid-head p{
     color: white;
 }
-.contact-us .contact-aling{}
 .contact-us .contact-aling .media{
     color: white;
     font-size: 15px;
