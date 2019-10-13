@@ -13,6 +13,21 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
 }
+#contact-number{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: rgb(0, 162, 255);
+    opacity: 0.8;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+.back-KP{
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #c0e8ec 51%, #acc2ca 75%);
+}
 .card-title {
     font-size: 20px;
 }
@@ -94,7 +109,9 @@ header{
 	transition: all 0.2s ease-in-out;
     /* height:125px; */
     height: auto;
-    background: #0ec5ac none repeat scroll 0 0;
+    /* background-image: linear-gradient(141deg, #b89faa 30%, rgb(172, 75, 75) 41%, rgb(160, 30, 30) 55%); */
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2ec6fd 75%);
+    background-image: linear-gradient(to left, rgb(165, 57, 57) , yellow);
 	padding: 0 0;
     font-family: 'Ubuntu', sans-serif;
     /* margin-bottom: 30px; */
@@ -205,7 +222,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
     .back-head
 {
     /* margin-left: 0% !important; */
-    background: #0ec5ac;
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
     .mob-text{
         text-align: center;
@@ -312,7 +329,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
         font-family: 'Ubuntu', sans-serif;
     }
     header .navbar-expand-lg .navbar-nav .nav-link{
-        background: #0ec5ac none repeat scroll 0 0;
+        background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
         float: right;
         text-align: left;
         padding: 0.5rem 1rem;
@@ -1586,7 +1603,7 @@ header .navbar-expand-lg .navbar-collapse ul li.menu-area .mega-area a:hover{
 /*---------------------Contact Us--------------------------*/
 
 .contact-us{
-    background:url(../img/IMG-20191011-WA0000.jpg);
+    background:url(../img/contact-background.jpg);
     margin-top: 1%;
     font-family: 'Ubuntu', sans-serif;
     background-repeat:no-repeat; 
